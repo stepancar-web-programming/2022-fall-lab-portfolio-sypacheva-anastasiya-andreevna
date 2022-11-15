@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/coffin.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="information" >
+        <div class="name" >
+            Сайт-визитка
+            <div class="menu">
+                <div>
+                    <a href="#about_me">Обо мне</a>
+                </div>
+                <div>
+                    <a href="#interests">Интересы и хобби</a>
+                </div>
+                <div>
+                    <a href="#skills">Навыки</a>
+                </div>
+            </div>
+        </div>
+        <div class="social"  >
+            <a href="https://t.me/anastasiykasss"><img src="image/telegram_icon-icons.com_72055%20(1).png"></a>
+            <a href="https://vk.com/anastasiykasss" target="new"><img class="icon" src="image/1486147202-social-media-circled-network10_79475.png" alt=""></a>
+            <a href="https://github.com/Anastasias35" target="new"><img class="icon"src="image/GitHub-Mark-32px.png" alt=""></a>
+            <a href=https://instagram.com/anastasia_sypacheva"><img src="image/img_8.png" style="width: 32px;height: auto;"></a>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="item">
+            <img src="image/img_1.png" style="display: none;" class="slide">
+        </div>
+        <div class="item">
+            <img src="image/img_2.png" style="display: block;" class="slide">
+        </div>
+
+        <div class="item">
+            <img src="image/img_4.png" style="display: none;" class="slide">
+        </div>
+        <a class="previous" onclick="changeSlidesLeft()">&#10094;</a>
+        <a class="next" onclick="changeSlidesRight()">&#10095;</a>
+    </div>
+
+    <div class="about_me" id="about_me">
+        <h1 >
+            Обо мне
+        </h1>
+        <div class="container_about_me">
+            <div class="texts_about_me">
+
+                Привет, меня зовут Настя)
+                <br>
+                Мне 20 лет
+                <br>
+                Я из Перми
+                <br>
+                Сейчас учусь на 3 курсе в университете ИТМО
+                <br>
+                По направлению программная инженерия
+            </div>
+            <div class="img_about_me">
+                <img src="image/1621584539128213686.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class = "interests" id = "interests">
+        <h1>
+            Интересы и хобби
+        </h1>
+        <div class="container_interests">
+            <div class="text_interests">
+                Обожаю танцы, занимаюсь Frame Up Strip
+                <br>
+                Интересуюсь аналитикой и программированием
+                <br>
+                Люблю читать художественную литературу в свободное время
+            </div>
+            <div class="img_interests">
+                <video src="image/IMG_7189.mp4" controls></video>
+            </div>
+        </div>
+    <div class="skills" id="skills">
+        <h1>
+            Навыки
+        </h1>
+        Hard Skills:
+        <br>
+        Python Java SQL
+        <br>
+        Около года изучаю машинное обучение
+        <br>
+        Стажер - разработчик в компании Тинькофф
+    </div>
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
