@@ -55,6 +55,7 @@ a:link,
 a:visited,
 a:active {
   color: #fff; /* Цвет ссылок */
+  text-decoration: none;
 }
 
 .menu div:hover {
