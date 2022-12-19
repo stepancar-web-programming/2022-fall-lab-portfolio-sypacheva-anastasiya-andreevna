@@ -1,10 +1,8 @@
 {
   "name": "untitled",
   "version": "1.0.0",
-  "description": "",
   "main": "script.js",
   "scripts": {
-    "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
     "stylelint": "stylelint ./*css",
     "stylelint:fix": "stylelint ./*css --fix"
