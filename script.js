@@ -1,30 +1,27 @@
-function changeSlidesLeft() {
+let indexSlide = 1
+
+function makeSlide(index_slide){
   const slides = document.getElementsByClassName('slide');
-  for (let i = 0; i < slides.length; i += 1) {
-    let indexBlock = 0;
-    if (slides[i].style.display === 'block') {
-      if (i === 0) {
-        indexBlock = slides.length - 1;
-      } else indexBlock = i - 1;
-      slides[i].style.display = 'none';
-      slides[indexBlock].style.display = 'block';
-      break;
-    }
+  if (index_slide<1){
+    indexSlide = slides.length;
   }
+  else if (index_slide>slides.length){
+    indexSlide=1
+  }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+
+  slides[indexSlide - 1].style.display = 'block';
+
 }
 
-function changeSlidesRight() {
 
-  const slides = document.getElementsByClassName('slide');
-  for (let i = 0; i < slides.length; i += 1) {
-    let indexBlock = 0;
-    if (slides[i].style.display === 'block') {
-      if (i + 1 === slides.length) {
-        indexBlock = 0;
-      } else indexBlock = i + 1;
-      slides[i].style.display = 'none';
-      slides[indexBlock].style.display = 'block';
-      break;
-    }
-  }
+function changeSlidesLeft(){
+   makeSlide(indexSlide-=1)
+}
+
+function changeSlidesRight(){
+  makeSlide(indexSlide+=1)
 }
