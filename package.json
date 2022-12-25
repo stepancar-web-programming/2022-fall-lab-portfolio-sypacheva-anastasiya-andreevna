@@ -1,15 +1,9 @@
 {
-  "name": "untitled",
-  "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "lint:fix": "eslint ./ --fix",
+    "lint": "eslint ./",
     "stylelint": "stylelint ./*css",
     "stylelint:fix": "stylelint ./*css --fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Anastasias35/web_project.git"
   },
   "keywords": [],
   "author": "",
