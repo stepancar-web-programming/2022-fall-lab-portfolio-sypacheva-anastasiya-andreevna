@@ -3,7 +3,7 @@
   "scripts": {
     "lint": "eslint ./",
     "stylelint": "stylelint ./*css",
-    "stylelint:fix": "stylelint ./*css --fix"
+    "stylelint:fix": "npm run stylelint --fix"
   },
   "keywords": [],
   "author": "",
