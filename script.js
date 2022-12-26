@@ -2,7 +2,7 @@ let indexSlide = 1
 
 function makeSlide(index_slide){
   const slides = document.getElementsByClassName('slide');
-  if (index_slide<1){
+  if (indexSlide<1){
     indexSlide = slides.length;
   }
   else if (index_slide>slides.length){
