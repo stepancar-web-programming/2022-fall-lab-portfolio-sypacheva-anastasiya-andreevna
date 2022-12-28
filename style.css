@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Serif+4:wght@300&display=swap");
+
+body {
+  font-family: monospace;
+  padding: 1% 3% 2%;
+  background-color: aliceblue;
+  word-wrap: break-word;
+  overflow: scroll;
+}
+
+.information {
+  display: flex;
+}
+
+.name {
+  width: 60%;
+  background: darksalmon;
+  text-align: center;
+  font-size: 24px;
+  font-family: Merriweather, serif;
+}
+
+.social {
+  flex: 1;
+  background: gray;
+  text-align: center;
+  height: auto;
+  text-shadow: lightslategray 2px 0;
+  font-size: 24px;
+  position: sticky;
+}
+
+.icon {
+  width: 30px;
+}
+
+.name,
+.social {
+  padding: 3%;
+  padding-bottom: 0;
+}
+
+.menu {
+  display: flex;
+  position: center;
+}
+
+.menu div {
+  width: 30%;
+  font-size: 15px;
+  padding: 2%;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: #fff; /* Цвет ссылок */
+  text-decoration: none;
+}
+
+.menu div:hover {
+  background-color: rgb(128 128 128 / 50%);
+  transition: all 1.5s;
+  cursor: pointer;
+}
+
+.slider {
+  width: 50%;
+  margin: 30px auto;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.img_about_me img,
+.img_interests video {
+  width: 100%;
+  height: auto;
+}
+
+.slider .item img {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.slider .previous,
+.slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.slider .next {
+  right: 27%;
+  border-radius: 3px 0 0 3px;
+}
+
+.slider .previous:hover,
+.slider .next:hover {
+  background-color: rgb(0 0 0 / 20%);
+}
+
+.slider .item {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.about_me {
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  background: darksalmon;
+  font-size: 24px;
+  font-family: Merriweather, serif;
+  text-align: center;
+}
+
+.container_about_me,
+.container_interests {
+  display: flex;
+  margin: 5% 2%;
+}
+
+.texts_about_me,
+.img_about_me,
+.text_interests,
+.img_interests {
+  width: 50%;
+  align-content: center;
+}
+
+.texts_about_me,
+.text_interests {
+  text-align: left;
+  font-size: 15px;
+  font-family: Merriweather, serif;
+  margin: 5% auto;
+  line-height: 40px;
+}
+
+ul { text-align: center; }
+ul li { display: inline-block; }
+
+.skills {
+  text-align: center;
+  font-size: 15px;
+  font-family: Merriweather, serif;
+  margin: 5% auto;
+  line-height: 40px;
+}
